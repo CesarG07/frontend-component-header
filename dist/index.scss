@@ -148,3 +148,117 @@ $rounded-pill: 50rem !default;
     border-radius: var(--pgn-size-rounded-pill, $rounded-pill);
   }
 }
+
+/* =========================================================
+   REPLICA DE DISEÑO: Header PUCP
+   ========================================================= */
+
+/* 1. Contenedor principal y fondo */
+.site-header-desktop {
+  background-color: #002257 !important;
+  height: 110px !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.site-header-desktop .container-fluid,
+.site-header-desktop .nav-container {
+  height: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* 2. Logo */
+.site-header-desktop .logo {
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 40px !important;
+}
+
+.site-header-desktop .logo img {
+  height: 60px !important;
+  width: auto !important;
+}
+
+/* 3. Navegación Principal (Transformación a bloques con bordes) */
+.site-header-desktop .main-nav {
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  margin-left: 20px !important;
+}
+
+.site-header-desktop .main-nav .nav-link {
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 30px !important;
+  color: #FFFFFF !important;
+  text-transform: uppercase !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  background-color: transparent !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 0 !important;
+  transition: background-color 0.3s ease !important;
+}
+
+/* Borde derecho para el último elemento del menú */
+.site-header-desktop .main-nav .nav-link:last-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Estado Hover y Activo (Iluminación sutil como en el diseño original) */
+.site-header-desktop .main-nav .nav-link:hover,
+.site-header-desktop .main-nav .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* 4. Menú Secundario (Transformación del botón usuario a bloque naranja) */
+.site-header-desktop .secondary-menu-container {
+  height: 100% !important;
+  margin-left: auto !important;
+  /* Lo empuja estrictamente a la derecha */
+}
+
+.site-header-desktop .secondary-menu-container .menu {
+  height: 100% !important;
+}
+
+.site-header-desktop .menu-trigger {
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  background-color: #FF9100 !important;
+  /* Color Naranja PUCP */
+  color: #002257 !important;
+  /* Texto Azul Oscuro */
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 40px !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  letter-spacing: 0.5px !important;
+  box-shadow: none !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.site-header-desktop .menu-trigger:hover {
+  background-color: #FFA733 !important;
+  /* Naranja ligeramente más claro en hover */
+  color: #002257 !important;
+}
+
+/* Ajustes gráficos para el avatar y los íconos (SVG) dentro del botón naranja */
+.site-header-desktop .menu-trigger .avatar {
+  border: 2px solid #002257 !important;
+}
+
+.site-header-desktop .menu-trigger svg {
+  fill: #002257 !important;
+  color: #002257 !important;
+}
