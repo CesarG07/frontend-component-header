@@ -88,7 +88,7 @@ var DesktopHeader = function DesktopHeader(_ref) {
     className: "nav main-nav"
   }, renderMainMenu()), /*#__PURE__*/React.createElement("nav", {
     "aria-label": intl.formatMessage(messages['header.label.secondary.nav']),
-    className: "nav secondary-menu-container align-items-center ml-auto"
+    className: "nav secondary-menu-container align-items-center"
   }, loggedIn ? /*#__PURE__*/React.createElement(React.Fragment, null, renderSecondaryMenu(), renderUserMenu()) : renderLoggedOutItems())))));
 };
 export var desktopHeaderDataShape = {
